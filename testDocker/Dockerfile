@@ -1,3 +1,4 @@
-# First docker file
-FROM tomcat:9-jdk15-openjdk-oracle
-EXPOSE 8080
+FROM centos:7
+RUN yum update -y
+ENTRYPOINT [ "echo" ]
+CMD "hello Docker"
